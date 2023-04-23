@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinMax function</title>
+    <style>
+        body {font-family: arial,Arial, Helvetica, sans-serif;}
+        h1 {padding: 0 0 0 40px;}
+        .container {
+            background: #eee;
+            width: 500px;
+            margin: 45px auto 0;
+
+            display: grid;
+            grid-template-columns: max-content 1fr 1fr min-content;
+            grid-template-rows: repeat(2,MinMax(150px,min-content));
+            grid-gap: 5px;
+
+
+        }
+        .items {
+            text-align: center;
+            font-size: 20px;
+            padding-top: 10px;
+            color: white;
+        }
+        .one{background: orangered;}
+        .two{background: yellowgreen;}
+        .three{background: slateblue;}
+        .four{background: hotpink;}
+        .five{background: royalblue;}
+        .six{background: mediumturquoise;}
+        .seven{background: mediumpurple;}
+        .eight{background: olive;}
+    </style>
+</head>
+<body>
+    <h1>CSS : grid MinMax() function</h1>
+    <div class="container">
+        <div class="items one">One Lorem Ipsum is simply dummy text</div>
+        <div class="items two">Two</div>
+        <div class="items three">Three</div>
+        <div class="items four">Four One Lorem One Lorem Ipsum isOne Lorem Ipsum is Ipsum is simply</div>
+        <div class="items five">Five</div>
+        <div class="items six">Six Four One Lorem One Lorem Ipsum isOne Lorem Ipsum is Ipsum is simply</div>
+        <div class="items seven">Seven</div>
+        <div class="items eight">Eight</div>
+    </div>
+</body>
+</html> 
+    <!-- max-content
+    min-content
+    MINmax() -->

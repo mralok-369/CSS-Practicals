@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table properties</title>
+	<style type="text/css">
+		body{
+			font-family: arial,helvetica;
+		}
+		table{
+			width: 300px;
+			border-collapse:  collapse;
+			empty-cells: hide;
+			table-layout: auto;
+		}
+		table, td, th {
+			border: 1px solid #000;
+		}
+		td,th{
+			vertical-align: top;
+			padding: 10px;
+		}
+		caption{
+			caption-side: top;
+		}
+		tr:hover{
+			
+		}
+		tr:nth-child(even){
+			background: #f2f2f2;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS : Table properties</h1>
+	<table>
+		<caption>Employee record</caption>
+		<tr>
+			<th>First name</th>
+			<th>Last name</th>
+			<th>savings</th>
+		</tr>
+		<tr>
+			<td>Mohan Lorem ipsum dolor sit amet, consectetur adipiscing </td>
+			<td>Kumar</td>
+			<td>100$</td>
+		</tr>
+		<tr>
+			<td>Salim Lorem ipsum dolor sit amet, consectetur adipiscing </td>
+			<td>Khan</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Inder Lorem ipsum dolor sit amet, consectetur adipiscing </td>
+			<td>singh</td>
+			<td>300$</td>
+		</tr>
+		<tr>
+			<td>Peter</td>
+			<td>Brown</td>
+			<td>250$</td>
+		</tr>
+		<tr>
+			<td>Peter</td>
+			<td>Brown</td>
+			<td>250$</td>
+		</tr>
+		<tr>
+			<td>Peter</td>
+			<td>Brown</td>
+			<td>250$</td>
+		</tr>
+		<tr>
+			<td>Peter</td>
+			<td>Brown</td>
+			<td>250$</td>
+		</tr>
+	</table>
+</body>
+</html>
+							<!--Table properties:
+								border-spacing = px %
+								border-collapse = seprate collapse
+								vertical-align = top, middle,bottom
+								caption-side = top, bottom
+								empty-cells = show, hide
+								table-layout = auto, fix
+								-->

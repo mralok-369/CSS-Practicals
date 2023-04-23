@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>font</title>
+	<style type="text/css">
+		body{
+			font-size: 18px;
+		}
+		#box{
+			width: 400px;
+			padding: 25px;
+			margin-bottom: 20px;
+			border: 2px solid black;
+			font-size: 80%;
+			line-height:2em;
+
+		}
+		#box2{
+			width: 400px;
+			padding: 25px;
+			border: 2px solid black;
+			font-size: 1em;
+			font-weight: 900;
+			font-family: arial;
+			font-style: italic;
+			font-variant: small-caps;
+		}
+		#box span{
+			font-size: 2em;
+		}
+	</style>
+</head>
+<body>
+	<h1>font properties</h1>
+	<!--font-size = xx-small,x-small, small,smaller,medium,large,x-large,xx-large, pixel=15px, percentage=100%, em=1em;
+		font-family = arial, helvetica, verdana, etc
+		font-weight = pixel or percentage , normal , bold, bolder,lighter, 
+		font-style = italic, oblique
+		font-variant = normal , small-caps
+		line-height = pixel or percentage
+		short hand = font: oblique small-caps normal 1em/35px arial,helvetica (style, varient, font-weight, font-size/line-height,font-family)
+	-->
+	<div id="box">
+		Lorem ipsum <span>dolor <span>sit amet, </span>consectetur adipiscing elit.</span> Mauris congue massa ac mauris ullamcorper tempus. Aenean est neque, sagittis sit amet dui et, varius congue nulla. Sed vel purus ex. Proin enim mi, feugiat at ante sed, scelerisque feugiat mi.
+	</div>
+	<div id="box2">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris congue massa ac mauris ullamcorper tempus. Aenean est neque, sagittis sit amet dui et, varius congue nulla. Sed vel purus ex. Proin enim mi, feugiat at ante sed, scelerisque feugiat mi.
+	</div>
+</body>
+</html>

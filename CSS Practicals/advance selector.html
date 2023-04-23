@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>advance selector</title>
+    <style>
+        /* universal slector */
+        * {
+            color: red;
+            border: 1px solid black;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS : advance selector</h1>
+    <p>hello</p>
+    <h1>helloo</h1>
+    <h2>hellooo</h2>
+    <h3>heellooo</h3>
+    <h4>hellooooo</h4>
+    <div>hiiiiiiiii</div>
+    <span>hiiiiiii</span> <br>
+    <a href="">helloooooooo</a>
+</body>
+</html>
+<!-- selectors category : simple selectors -> type selectors
+                                         class selectors
+                                         id selectors
+                                         universal selectors -> *
+                                         
+                     combinators selectors -> descendant selectors -> #box p
+                                              direct child selectors -> ul > li or #box>p
+                                              adjacent sibling selectors -> div+p or ul+p
+                                              general sibling selectors -> div~p or ul~p
+
+                     attribute selectors -> A[attr] -> element with specific attribute -> img[alt] input[type]
+                                            A[attr=val] -> input[type="text"] , img[title="flower"]
+                                            A[attr^=val] -> img[alt^="image"]
+                                            A[attr|=val] -> img[alt|="image"]
+                                            A[attr$=val] -> end with attribute
+                                            A[attr*=val] -> value occurs anywhere in attribute
+                                            A[attr~=val] -> value matches attribute in space seprated list -->
+
+                     <!-- pseudo classes & pseudo elements -> :first-child
+                                                          :last-child
+                                                          :nth-child()
+                                                          :nth-last-child()
+                                                          :nth-last-of-type()
+                                                          :nth-of-type
+                                                          :only-child
+                                                          :only-of-child
+                                                          :first-of-type
+                                                          :last-of-type
+                                                          :empty
+                                                          :not()
+                                                          ::lang()
+                                                          :link
+                                                          :hover
+                                                          :visited
+                                                          :active
+                                                          :target
+                                                          :focus
+                                                          :checked
+                                                          :disable
+                                                          :enabled
+                                                          :required
+                                                          :optional
+                                                          :in-range
+                                                          :out-of-range
+                                                          :read-only
+                                                          :read-write
+                                                          :valid
+                                                          :invalid
+                                                          :default
+                                                          :root -->

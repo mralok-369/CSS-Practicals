@@ -1,0 +1,56 @@
+body{
+	font-family: cursive;
+	background-color: #b3b3b3;
+}
+table{
+	border:2px solid black;
+}
+#header{
+	background-color:#ffad33;
+}
+#a1{
+	background-color:#b3ffb3;
+}
+#a2{
+	background-color:#ffff80;
+}
+#a3{
+	background-color:#ccfff5;
+}
+#a4{
+	background-color:#ffcce6;
+}
+#a5{
+	background-color:#b3b3ff;
+}
+td{
+	border: 0px solid black;
+	border-radius: 0px;
+}
+.book{
+	vertical-align: center;
+	padding:5px 20px 5px 20px;
+	background-color:#ffc8b3;
+}
+.about{
+	padding:20px;
+}
+h1{
+	text-align:center;
+	padding:15px 5px 5px 5px;
+	font-size:50px;
+}
+#head{
+	background-color:#ffc266;
+}
+#footer{
+	text-align: center;
+	font-size:25px;
+	padding:15px 5px 5px 5px;
+	margin:10px;
+}
+#foot{
+	text-align:right;
+	padding:0px 50px 25px;
+	
+}

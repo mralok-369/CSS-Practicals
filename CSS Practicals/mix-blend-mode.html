@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mix-blend-mode</title>
+	<style type="text/css">
+		body{
+			font-family: arieal;
+		}
+		#box{
+			width: 440px;
+			height: 440px;
+			border: 2px solid black;
+			background-image: linear-gradient(to right,red,yellow);
+		}
+		h2{
+			background: red;
+			text-align: center;
+			font-size: 55px;
+			margin-top: 150px;
+			mix-blend-mode:difference; 
+		}
+		img{
+			mix-blend-mode:darken;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS : mix-blend-mode</h1>
+	<div id="box"> 
+		<img src="alok.jpg">
+		<h2>mix-blend-mode</h2>
+	</div>
+</body>
+</html>
+	<!--mix-blend-mode : normal, multiply, screen, overlay, darken, lighten, color-dodge, color-burn, hard-light, soft-light 
+								difference,exclusion, hue, color, saturation, liminosity
+
+		-->

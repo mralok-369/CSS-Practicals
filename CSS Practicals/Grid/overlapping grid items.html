@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nested grid</title>
+    <style>
+        body {font-family: arial,Arial, Helvetica, sans-serif;}
+        h1 {padding: 0 0 0 40px;}
+
+        .container {
+            background: lightgray;
+            width: 300px;
+            margin: 50px auto 0;
+
+            display: grid;
+            grid-template-columns: repeat(2,150px);
+            grid-template-rows: repeat(2,150px);
+
+        }
+        .items {padding: 5px 10px; font-size: 20px;max-width: 150px; color: white;}
+        .one{background: orangered;
+            grid-column: 1/span 2;
+            grid-row: 1/span 2;
+            align-self: start;
+        }
+        .two{background: yellowgreen; 
+            grid-column: 1/span 2;
+            grid-row: 1/span 2;
+            align-self: center;
+            justify-self: center;
+            z-index: 1;
+        }
+        .three{background: slateblue;
+            grid-column: 1/span 2;
+            grid-row: 1/span 2;
+            align-self: end;
+            justify-self: end;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Grid : Overlapping grid items</h1>
+    <div class="container">
+        <div class="items one">One Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
+        <div class="items two">Two Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
+        <div class="items three">Three Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
+    </div>
+</body>
+</html>

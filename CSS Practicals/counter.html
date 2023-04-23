@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+    <style>
+        body {
+            font:19px/25px arial; 
+            padding: 10px 0 0 20px;
+            counter-reset: my-counter 0;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 35px;
+            color: green;
+        }
+        h2::before{
+            content: "chapter "counter(my-counter) " : ";
+            counter-increment: my-counter 1;
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS : counter increment</h1>
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a ultricies erat. Suspendisse eu ex sed erat molestie tincidunt. Integer id libero nisl. Vivamus fermentum erat vitae tellus mollis hendrerit. Phasellus congue diam. Sed luctus laoreet leo. Etiam posuere faucibus congue.</p>
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>eu mattis elit varius. Donec tristique consequat erat, at tempor felis cursus non. Donec leo mauris, consectetur ut risus at, iaculis molestie purus. Fusce eget velit vitae elit ultricies auctor. Sed luctus laoreet leo. Duis non tellus ac purus mattis viverra vel sit amet purus. Etiam id vulputate neque. Integer neque dolor, efficitur eu ligula id, tempor molestie ex. Etiam posuere faucibus congue.</p>
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>tristique consequat erat, at tempor felis cursus non. Donec leo mauris, consectetur ut risus at, iaculis molestie purus. Fusce eget velit vitae elit ultricies auctor. Sed luctus laoreet leo. Duis non tellus ac purus mattis viverra vel sit amet purus. Etiam id vulputate neque. Integer neque dolor, efficitur eu ligula id, tempor molestie ex. Etiam posuere faucibus congue.</p>
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a ultricies erat. Suspendisse eu ex sed erat molestie tincidunt. Integer id libero nisl. Vivamus fermentum erat vitae tellus mollis hendrerit. Phasellus congue diam viefficitur eu ligula id, tempor molestie ex. Etiam posuere faucibus congue.</p>
+</body>
+</html>
+<!-- props -> 
+        counter-increment
+        counter-reset
+        counter() 
+    -->

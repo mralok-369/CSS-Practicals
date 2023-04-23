@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>background-origin</title>
+	<style type="text/css">
+		body{
+			background: tan;
+		}
+		#box{
+			width: 800px;
+			height: 400px;
+			padding: 25px;
+			text-align: justify;
+			border: 20px dotted black;
+			background-color: white;
+			background-image: url(lib2.jpg);
+			background-repeat: no-repeat;
+			background-size: 200px;
+
+			background-origin: border-box;
+
+		}
+		p{
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS : background-origin</h1>
+	<div id="box">-origin : 
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Mauris congue massa ac mauris ullamcorper tempus.Aenean est neque, sagittis sit amet dui et, varius congue nulla.Sed vel purus ex. Proin enim mi, feugiat at ante sed, scelerisque feugiat mi.</p>
+	</div>
+</body>
+</html>
+	<!--background-origin :  padding-box, border-box, content-box, text
+
+		-->

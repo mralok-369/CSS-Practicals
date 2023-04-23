@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gradient</title>
+	<style type="text/css">
+		body{
+			font-family: arial;
+		}
+		#box{
+			width: 800px;
+			height: 300px;
+			padding: 30px;
+			border: 3px solid black;
+			background: repeating-linear-gradient(to right,red,yellow 10%,green 20%);
+		}
+		#box2{
+			width: 800px;
+			height: 300px;
+			padding: 30px;
+			border: 3px solid black;
+			background: repeating-radial-gradient(circle,yellow 50px,green 100px);
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS : gradient</h1>
+	<div id="box">-origin : 
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit.Mauris congue massa ac mauris ullamcorper tempus.Aenean est neque, sagittis sit amet dui et, varius congue nulla.Sed vel purus ex. Proin enim mi, feugiat at ante sed, scelerisque feugiat mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Mauris congue massa ac mauris ullamcorper tempus.Aenean est neque, sagittis sit amet dui et, varius congue nulla.Sed vel purus ex. Proin enim mi, feugiat at ante sed, scelerisque feugiat mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Mauris congue massa ac mauris ullamcorper tempus.Aenean est neque, sagittis sit amet dui et, varius congue nulla.Sed vel purus ex. Proin enim mi, feugiat at ante sed, scelerisque feugiat mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Mauris congue massa ac mauris ullamcorper tempus.Aenean est neque, sagittis sit amet dui et, varius congue nulla.Sed vel purus ex. Proin enim mi, feugiat at ante sed, scelerisque feugiat mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Mauris congue massa ac mauris ullamcorper tempus.Aenean est neque, sagittis sit amet dui et, varius congue nulla.Sed vel purus ex. Proin enim mi, feugiat at ante sed, scelerisque feugiat mi.
+	</div>
+	<div id="box2">
+		<h2>radial gradient</h2>
+	</div>
+</body>
+</html>
+	<!--gradient :
+		linear gradient = top to bottom, left to right, right to left, bottom to top
+		radial gradient = center, right bottom, left bottom, left top,closet, farthest,closest-cornet
+		repeated linear gradient 
+		repeated radial gradient closet farthest
+		eg: background: linear-gradient(to bottom right,red,yellow);, background: linear-gradient(45deg,red,yellow);
+			background: repeating-linear-gradient(to right,red,yellow 10%,green 20%);
+			background: radial-gradient(circle,red 25%,yellow 15%,green 60%);
+			background: radial-gradient(closest-side at 80% 50%,red,yellow,green);
+			ial-gradient(farthest-side at 90% 20%,red,yellow,green);
+			background: radial-gradient(closest-corner at 50% 50%,red,yellow,green);
+			background: repeating-radial-gradient(red,yellow 50px,green 15%);
+		-->

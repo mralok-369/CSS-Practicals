@@ -1,0 +1,47 @@
+body{
+	background-image: url(image/lib.jpg);
+	background-repeat: repeat-y;
+}
+#header{
+	background-image:url(image/header.jpg);
+	border:2px solid black;
+	text-align:center;
+	font-size:25px;
+	color:silver;
+}
+#line{
+	height:600px;
+	width:100%;
+	margin:5px;
+}
+.book1{
+	height:400px;
+	width:30%;
+	padding:15px;
+	margin:5px;
+	float:left;
+}
+.book1 img{
+	margin:1px;
+	padding:30px;
+}
+#line2{
+	height:600px;
+	width:100%;
+	margin:5px;
+}
+.book2{
+	eight:400px;
+	width:30%;
+	padding:15px;
+	margin:5px;
+	float:left;
+}
+.book2 img{
+	margin:1px;
+	padding:40px;
+}
+img:hover{
+	transform: scale(1.1);
+	z-index:2;
+}

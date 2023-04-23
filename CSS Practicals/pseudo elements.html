@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo elements</title>
+    <style>
+        p::selection{
+            background: rgb(206, 151, 151);
+        }
+        ::placeholder{
+            color: red;
+        }
+        /* p::first-line{
+            color: red;
+            font-size: 30px;
+            font-weight: bold;
+            background: wheat;
+        } */
+        div::before{
+            content: "hello";
+            background: red;
+            color: #fff;
+            font-size: 30px;
+            font-weight: 30px;
+        }
+        div:hover::after{
+            content: "world";
+            background: green;
+            color: #fff;
+            font-size: 30px;
+            font-weight: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS : pseudo elements</h1>
+    <label for="">name</label><input type="text" placeholder="enter your name">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a ultricies erat. Suspendisse eu ex sed erat molestie tincidunt. Integer id libero nisl. Vivamus fermentum erat vitae tellus mollis hendrerit. Phasellus congue diam vitae erat varius, eu mattis elit varius. Donec tristique consequat erat, at tempor felis cursus non. Donec leo mauris, consectetur ut risus at, iaculis molestie purus. Fusce eget velit vitae elit ultricies auctor. Sed luctus laoreet leo. Duis non tellus ac purus mattis viverra vel sit amet purus. Etiam id vulputate neque. Integer neque dolor, efficitur eu ligula id, tempor molestie ex. Etiam posuere faucibus congueLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a ultricies erat. Suspendisse eu ex sed erat molestie tincidunt. Integer id libero nisl. Vivamus fermentum erat vitae tellus mollis hendrerit. Phasellus congue diam vitae erat varius, eu mattis elit varius. Donec tristique consequat erat, at tempor felis cursus non. Donec leo mauris, consectetur ut risus at, iaculis molestie purus. Fusce eget velit vitae elit ultricies auctor. Sed luctus laoreet leo. Duis non tellus ac purus mattis viverra vel sit amet purus. Etiam id vulputate neque. Integer neque dolor, efficitur eu ligula id, tempor molestie ex. Etiam posuere faucibus congue</p>
+    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+    <ul>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a ultricies erat. Suspendisse eu ex sed erat molestie tincidunt. Integer id libero nisl. Vivamus fermentum erat vitae tellus mollis hendrerit. Phasellus congue diam vitae erat varius, eu mattis elit varius. Donec tristique consequat erat, at tempor felis cursus non. Donec leo mauris, consectetur ut risus at, iaculis molestie purus. Fusce eget velit vitae elit ultricies auctor. Sed luctus laoreet leo. Duis non tellus ac purus mattis viverra vel sit amet purus. Etiam id vulputate neque. Integer neque dolor, efficitur eu ligula id, tempor molestie ex. Etiam posuere faucibus congue</p>
+</body>
+</html>
+<!-- elements -> ::after
+            ::before
+            ::first-letter
+            ::first-line
+            :selection
+            ::placeholder 
+        -->

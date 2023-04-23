@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attr function</title>
+    <style>
+        p{
+            font-size: 37px;
+            margin: 200px 0 0 50px;
+        }
+        p:hover:after{
+            content: attr(data-caption);
+            color: red;
+        }
+        /* p::after{
+            /* content: attr(class); 
+            content: attr(data-caption);
+            color: red;
+        } */
+    </style>
+</head>
+<body>
+    <h1>CSS : attr function</h1>
+    <p class="text" data-caption="World">Hello </p>
+</body>
+</html>

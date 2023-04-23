@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positioning grid items</title>
+    <style>
+        body {font-family: arial,Arial, Helvetica, sans-serif;}
+        h1 {padding: 0 0 0 40px;}
+        .container {
+            background: #eee;
+            width: 500px;
+            margin: 50px 0 0 50px;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 150px 150px;
+            grid-gap: 20px;
+        }
+        .items {
+            text-align: center;
+            padding-top: 50px;
+            font-size: 25px;
+            color: white;
+        }
+        .items1{
+            background: orangered;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+        .items2{
+            background: yellowgreen;
+        }
+        .items3{
+            background: slateblue;
+        }
+        .items4{
+            background: hotpink;
+        }
+        .items5{
+            background: royalblue;
+        }
+        .items6{
+            background: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS : positioning grid items</h1>
+    <div class="container">
+        <div class="items items1">1</div>
+        <div class="items items2">2</div>
+        <div class="items items3">3</div>
+        <div class="items items4">4</div>
+        <div class="items items5">5</div>
+        <div class="items items6">6</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object fit</title>
+    <style>
+        .container {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        .box {
+            width: 30%;
+            border: 2px solid red;
+            float: left;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-right: 2%;
+            margin-bottom: 13px;
+        }
+
+        .box img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            /* using boject fit props */
+            object-fit: scale-down;
+        }
+
+        .last {
+            margin-right: 0;
+        }
+
+        @media screen and (max-width:950px) {
+            .box {
+                width: 48%;
+            }
+        }
+
+        @media screen and (max-width:800px) {
+            .box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="margin-bottom: 30px;">CSS : object fit</h1>
+    <div class="clearfix">
+        <div class="container">
+            <div class="box">
+                <img src="alok.jpg" alt="alok">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a ultricies erat. Suspendisse eu ex
+                    sed erat molestie tincidunt. Integer id libero nisl. Vivamus fermentum erat vitae tellus mollis
+                    hendrerit</p>
+            </div>
+            <div class="box">
+                <img src="horse.jpg" alt="dark horse">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a ultricies erat. Suspendisse eu ex
+                    sed erat molestie tincidunt. Integer id libero nisl. Vivamus fermentum erat vitae tellus mollis
+                    hendrerit</p>
+            </div>
+            <div class="box">
+                <img src="lib2.jpg" alt="library">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a ultricies erat. Suspendisse eu ex
+                    sed erat molestie tincidunt. Integer id libero nisl. Vivamus fermentum erat vitae tellus mollis
+                    hendrerit</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- values ->   fill
+            contain
+            cover
+            scale-down
+            none -->

@@ -1,0 +1,23 @@
+body{
+	background-image: url(image/lib.jpg);
+	background-repeat: repeat-y;
+}
+h1{
+	color: red;
+}
+p{
+	color: gold;
+}
+.book1{
+	border: 2px solid black;
+	width: 30%;
+	height: 400px;
+	float: left;
+	clear: 
+}
+#footer{
+	width: 8%;
+	height: 800px;
+	float: right;
+	border :2px solid black;
+}

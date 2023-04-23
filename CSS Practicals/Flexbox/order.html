@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order</title>
+    <style>
+        body {font-family: arial,Arial, Helvetica, sans-serif;}
+        h1 {padding: 0 0 0 40px;}
+
+        .container {
+            background: lightgray;
+            margin: 50px;
+            padding: 10px;
+            border: 3px solid black;
+            height: 150px;
+
+            display: flex;
+                        
+        }
+        .items {
+            padding: 10px; 
+            font-size: 20px; 
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            margin: 5px;
+        }
+        .one{background: orangered; order: 1;}
+        .two{background: yellowgreen; order: -2;}
+        .three{background: slateblue;}
+        .four{background: hotpink; order: -1;}
+        .five{background: royalblue; }
+    </style>
+</head>
+<body>
+    <h1>Flex : order</h1>
+    <div class="container">
+        <div class="items one">One</div>
+        <div class="items two">Two</div>
+        <div class="items three">Three</div>
+        <div class="items four">Four</div>
+        <div class="items five">Five</div>
+    </div>
+</body>
+</html>
+<!-- values -> auto, flex-start, flex-end, center, stretch, baseline -->

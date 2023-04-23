@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv=X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid gap</title>
+    <style>
+        body {font-family: arial,Arial, Helvetica, sans-serif;}
+        h1 {padding: 0 0 0 40px;}
+        .container {
+            background: #eee;
+            width: 500px;
+            margin: 50px 0 0 50px;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 100px 100px 100px;
+
+            /* grid-row-gap: 15px;
+            grid-column-gap: 50px; */
+
+            grid-gap: 25px 50px;
+        }
+        .items {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 25px;
+            color: white;
+        }
+        .items1{
+            background: orangered;
+        }
+        .items2{
+            background: yellowgreen;
+        }
+        .items3{
+            background: slateblue;
+        }
+        .items4{
+            background: hotpink;
+        }
+        .items5{
+            background: royalblue;
+        }
+        .items6{
+            background: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS : grid gap</h1>
+    <div class="container">
+        <div class="items items1">first</div>
+        <div class="items items2">second</div>
+        <div class="items items3">third</div>
+        <div class="items items4">fourth</div>
+        <div class="items items5">fifth</div>
+        <div class="items items6">sixth</div>
+    </div>
+</body>
+</html>
+<!-- prps -> 
+    grid-row-gap
+    grid-column-gap
+    grid-gap 
+-->

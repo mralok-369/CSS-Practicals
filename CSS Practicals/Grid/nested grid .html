@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nested grid</title>
+    <style>
+        body {font-family: arial,Arial, Helvetica, sans-serif;}
+        h1 {padding: 0 0 0 40px;}
+
+        .container {
+            background: lightgray;
+            width: 650px;
+            margin: 50px auto 0;
+
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,150px);
+            grid-gap: 10px;
+        }
+        .items {padding: 5px 10px; font-size: 20px; color: white;}
+        .one{background: orangered;}
+        .two{background: yellowgreen; }
+        .three{
+            background: slateblue; 
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+        }
+        .three > div {
+            background: white;
+            color: red;
+            padding: 10px;
+        }
+        .four{background: hotpink; }
+        /* .five{background: royalblue; }
+        .six{background: mediumturquoise;} */
+    </style>
+</head>
+<body>
+    <h1>CSS Grid : nested grid</h1>
+    <div class="container">
+        <div class="items one">One</div>
+        <div class="items two">Two</div>
+        <div class="items three">
+            <div class="subitems1">A</div>
+            <div class="subitems2">B</div>
+            <div class="subitems3">C</div>
+        </div>
+        <div class="items four">Four</div>
+        <!-- <div class="items five">Five</div>
+        <div class="items six">Six</div> -->
+    </div>
+</body>
+</html>

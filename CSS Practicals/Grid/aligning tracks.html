@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aligning tracks</title>
+    <style>
+        body {font-family: arial,Arial, Helvetica, sans-serif;}
+        h1 {padding: 0 0 0 40px;}
+        .container {
+            background: #eee;
+            width: 500px;
+            height: 600px;
+            margin: 45px auto 0;
+
+            display: grid;
+            grid-template-columns: repeat(2, 150px);
+            grid-template-rows: repeat(2, 100px);
+            grid-gap: 15px;
+            grid-auto-rows: 50px;
+
+            justify-content: space-evenly;
+            align-content: space-evenly;
+        }
+        .items {padding: 5px 10px; font-size: 20px; color: white;}
+        .one{background: orangered;}
+        .two{background: yellowgreen;}
+        .three{
+            background: slateblue; 
+            grid-row: span 3;
+        }
+        .four{background: hotpink;}
+        .five{background: royalblue;}
+        .six{background: mediumturquoise;}
+        .seven{
+            background: mediumpurple;
+            grid-column: span 2; 
+        }
+        .eight{background: olive;}
+    </style>
+</head>
+<body>
+    <h1>CSS grid : Track alignment</h1>
+    <div class="container">
+        <div class="items one">One</div>
+        <div class="items two">Two</div>
+        <div class="items three">Three</div>
+        <div class="items four">Four</div>
+        <div class="items five">Five</div>
+        <div class="items six">Six</div>
+        <div class="items seven">Seven</div>
+        <div class="items eight">Eight</div>
+    </div>
+</body>
+</html>
+<!-- vertical alignment -> start, end, center, stretch, space-around, space-between, space-evenly -->
+<!-- horizontal alignment -> start, end, center, stretch, space-around, space-between, space-evenly -->

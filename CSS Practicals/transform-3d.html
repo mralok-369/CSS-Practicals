@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        .base {
+            width: 350px;
+            height: 250px;
+            background: grey;
+            font-size: 18px;
+            text-align: center;
+            margin: 100px 0 0 100px;
+        }
+        #box {
+            width: 350px;
+            height: 250px;
+            background: tomato;
+            /* transform-origin: left bottom;
+            transform: perspective(800px) rotateX(30deg); */
+            /* transform-origin: right center;
+            transform: perspective(800px) rotateY(-50deg); */
+            transform: perspective(800px) rotateY(60deg) translateZ(100px) translate3d(20px,10px,50px);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS : transform 3d </h1>
+    <div class="base">
+        <div id="box">Hello world</div>
+    </div>
+</body>
+</html>
+<!-- props - rotateX(angle),rotateY(angle),rotateZ(angle),rotate3d(x,y,z,angle), translateZ(z),translate3d(x,y,z),scale3d(x,y,z),scaleZ(z),prespective(n),matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n),none -->

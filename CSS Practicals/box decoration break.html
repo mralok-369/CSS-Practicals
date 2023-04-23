@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box decoration break</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 30px;
+        }
+        span {
+            background-image: linear-gradient(red,yellow);
+            font-size: 21px;
+            line-height: 50px;
+            border: 2px solid black;
+            border-radius: 5px;
+            -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="margin-bottom: 30px;"> CSS : box decoration break</h1>
+    <span>Lorem ipsum dolor<br> sit amet, consectetur<br> adipiscing elit.<br> Nulla a ultricies <br>erat. Suspendisse <br>eu ex sed erat <br>molestie tincidunt.</span>
+</body>
+</html>
+<!-- values -> slice, clone -->

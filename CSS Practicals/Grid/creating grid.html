@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {font-family: arial;}
+        h1 {text-align: center;}
+
+        .container {
+            background: #eee;
+            width: 600px;
+            margin: 70px 0 0 50px;
+
+            display: grid;
+            /* grid-template-columns: 200px 150px auto; */
+            grid-template-columns: repeat(2, 150px) 50%;
+            grid-template-rows: 200px 200px 100px;
+        }
+        .items1{
+            background: orangered;
+        }
+        .items2{
+            background: yellowgreen;
+        }
+        .items3{
+            background: slateblue;
+        }
+        .items4{
+            background: hotpink;
+        }
+        .items5{
+            background: royalblue;
+        }
+        .items6{
+            background: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS : grid</h1>
+    <div class="container">
+        <div class="items items1">first</div>
+        <div class="items items2">second</div>
+        <div class="items items3">third</div>
+        <div class="items items4">fourth</div>
+        <div class="items items5">fifth</div>
+        <div class="items items6">sisth</div>
+    </div>
+</body>
+</html>

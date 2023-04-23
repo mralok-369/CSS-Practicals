@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested flex</title>
+    <style>
+        body {font-family: arial,Arial, Helvetica, sans-serif;}
+        h1 {padding: 0 0 0 40px;}
+        .container {
+            background: #eee;
+            margin: 50px;
+            padding: 0px;
+            border: 3px solid black;
+
+            display: flex;
+            flex-direction: column;
+        }
+        .items {
+            color: #fff;
+            font-size: 20px; 
+            font-weight: bold;
+            text-align: center;
+            padding: 0px; 
+            height: 100px;
+        }
+        .one{background: orangered;}
+        .two{
+            background: yellowgreen;
+            display: flex;
+        }
+        .two > .subitem{
+            background: wheat;
+            color: mediumpurple;
+            flex-grow: 1;
+            margin: 5px;
+        }
+        .three{background: slateblue;}
+    </style>
+</head>
+<body>
+    <h1>CSS Flex : Nested flex</h1>
+    <div class="container">
+        <div class="items one">One</div>
+        <div class="items two">
+            <div class="subitem subitem1">A</div>
+            <div class="subitem subitem2">B</div>
+            <div class="subitem subitem3">C</div>
+        </div>
+        <div class="items three">Three</div>
+    </div>
+</body>
+</html>
